@@ -3,9 +3,6 @@ import cors from 'cors';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-
-dotenv.config({ path: '../.env' });
 
 const { NEXT_PUBLIC_MONGO_URL } = process.env;
 
