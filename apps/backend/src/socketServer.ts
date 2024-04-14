@@ -1,8 +1,8 @@
-import express from 'express';
-import cors from 'cors';
-import { Server } from 'socket.io';
-import { createServer } from 'http';
-import mongoose from 'mongoose';
+const express = require('express');
+const cors = require('cors');
+const { Server } = require('socket.io');
+const { createServer } = require('http');
+const mongoose = require('mongoose');
 
 const { NEXT_PUBLIC_MONGO_URL } = process.env;
 
