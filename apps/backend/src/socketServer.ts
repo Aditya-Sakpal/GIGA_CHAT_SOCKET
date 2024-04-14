@@ -31,7 +31,7 @@ const OnlineUsersSchema = new mongoose.Schema({
 const OnlineUser = mongoose.model("OnlineUser", OnlineUsersSchema, "onlineUsers");
 
 const app = express();
-const port = 5000;
+const port = process.env.RENDER_WEB_SOCKET_PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
